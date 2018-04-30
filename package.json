@@ -1,0 +1,17 @@
+{
+  "name": "mktree",
+  "version": "1.0.0",
+  "description": "Self-learning merkle tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "ZChen",
+  "license": "ISC",
+  "dependencies": {
+    "buffer-reverse": "^1.0.1",
+    "crc-32": "^1.2.0",
+    "crypo": "^0.1.4",
+    "m-tree": "0.0.4"
+  }
+}
