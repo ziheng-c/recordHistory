@@ -117,8 +117,6 @@ class MerkleTree {
         hash = reverse(this.hashAlgorithm(hash));
       } else {
         buffers.push(hash);
-        console.log(buffers)
-        console.log(buffers[isLeftNode ? 'unshift' : 'push'])
         buffers[isLeftNode ? 'unshift' : 'push'](node.data);
         hash = this.hashAlgorithm(Buffer.concat(buffers))
       }
