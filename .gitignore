@@ -9,3 +9,4 @@ indextemplate.ejs
 index.html
 /gvt/
 newrelic_agent.log
+./data/chain
