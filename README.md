@@ -1,1 +1,4 @@
-This is a test project of so called tk coin -> test coin coin XD
+Record history
+
+Who controls the present controls the past.
+History is written by the victors, true history can be hidden.
