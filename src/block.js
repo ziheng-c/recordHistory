@@ -6,11 +6,19 @@ class Block {
     this.previousHash = previousHash.toString();
     this.timestamp = timestamp;
     this.data = data;
+    this.difficulty = 4;
+    this.nonce = 0;
     this.hash = this.calculateHash(index, previousHash, timestamp, data);
   }
 
   calculateHash(index, previousHash, timestamp, data) {
-    return CryptoJS.SHA256(index + previousHash + timestamp + data).toString();
+    while(true){
+      const hash =CryptoJS.SHA256(index + previousHash + timestamp + data + this.nonce).toString();
+      if(hash.substring(0, this.difficulty) === '0000'){
+        return hash
+      }
+      this.nonce ++ ;
+    }
   }
 }
 
