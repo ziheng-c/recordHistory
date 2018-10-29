@@ -1,12 +1,2 @@
+data
 node_modules
-npm-debug.log*
-.npmrc
-/.metadata/
-.tmp-globalize-webpack
-/tests/out/
-/dist/
-indextemplate.ejs
-index.html
-/gvt/
-newrelic_agent.log
-./data/chain
